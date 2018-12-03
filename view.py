@@ -71,11 +71,7 @@ def ussd_callback():
                 menu = HighLevelMenu(user_response, phone_number, session_id)
                 # initialise menu dict
                 menus = {
-                    9: {
-
-                        # user_response : c2b_checkout(
-                        # phone_number= phone_number, amount = int(user_response)
-                        # )
+                   
 
                         "1": menu.default_mpesa_c,
                         "2": menu.default_mpesa_c,
@@ -83,10 +79,6 @@ def ussd_callback():
                         "default": menu.default_mpesa_c
                     },
                     10: {
-
-                        # user_response : b2c_checkout(
-                        # phone_number=phone_number, amount=int(user_response)
-                        # )
 
                         "1": menu.b2c_default,
                         "2": menu.b2c_default,
